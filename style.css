@@ -1,0 +1,208 @@
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ 
+ :root {
+     --color-green: #50fa7b;
+     --color-rocke: #7159c1;
+ }
+ 
+ body {
+     background: #282a36;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ header {
+     padding: 32px;
+     border-bottom: 1px solid #333;
+     background: rgba(0, 0, 0, 0.1)
+ }
+ 
+ .menu {
+     text-align: center;
+ }
+ 
+ .menu a {
+     color: white;
+     font-size: 18px;
+     line-height: 28px;
+     margin: 0 16px;
+     text-decoration: none;
+ }
+ /* criar um seletor*/
+ 
+ .menu a:hover {
+     color: var(--color-green);
+     transition: color 300ms;
+ }
+ 
+ #wrapper {
+     text-align: center;
+     padding: 32px;
+ }
+ 
+ #wrapper img {
+     border-radius: 50%;
+     border: 2px solid var(--color-green);
+     margin-bottom: 32px;
+     size: 10%;
+     height: 300px;
+ }
+ 
+ #wrapper h2 {
+     font-size: 28px;
+     line-height: 25px;
+     font-weight: bold;
+     color: white;
+     margin-top: 10px;
+ }
+ 
+ #wrapper h3 {
+     font-size: 18px;
+     font-weight: normal;
+     line-height: 35px;
+     color: white;
+     opacity: 0.9;
+ }
+ 
+ #wrapper p {
+     margin-top: 10px;
+     font-size: 14px;
+     color: white;
+ }
+ 
+ #warpper p {
+     max-width: 500px;
+     margin: 30px auto;
+     text-align: justify;
+ }
+ 
+ .links {
+     text-align: center;
+ }
+ 
+ .links a {
+     text-decoration: none;
+     color: white;
+     font-size: 15px;
+     margin: 0 16px;
+ }
+ 
+ .links a {
+     border-bottom: 1px solid var(--color-green);
+ }
+ /*========= Cards edição ===============*/
+ 
+ .cards {
+     max-width: 800px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+     cursor: pointer;
+ }
+ 
+ .card {
+     background-color: var(--color-rocke);
+ }
+ 
+ .card_image-container img {
+     width: 100%;
+ }
+ 
+ .card__content,
+ .card_info {
+     padding: 24px;
+     color: white;
+     align-items: center;
+ }
+ 
+ .card_info {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ 
+ .card_price {
+     background-color: var(--color-rocke);
+     filter: brightness(90%);
+     padding: 5px 20px;
+     border-radius: 10px;
+     text-align: center;
+ }
+ /* =========== Modal =========== */
+ 
+ .modal-overlay {
+     background-color: rgba(0, 0, 0, 0.7);
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     opacity: 0;
+     visibility: hidden;
+ }
+ 
+ .modal {
+     background-color: white;
+     width: 90%;
+     height: 90%;
+     margin: 5vh auto;
+     position: relative;
+ }
+ 
+ .modal .close-modal {
+     color: black;
+     position: absolute;
+     /* posição absuluta na tela*/
+     right: 10px;
+     top: 10px;
+     cursor: pointer;
+ }
+ /* =========== Modal active =========== */
+ 
+ .modal-overlay.active {
+     opacity: 1;
+     visibility: visible;
+ }
+ /* ============ Iframe =============== */
+ 
+ iframe {
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     top: 5%
+ }
+ /* =====  featured ===== */
+ 
+ .featured-wrapper.card_image-container {
+     position: relative;
+ }
+ 
+ .featured {
+     position: absolute;
+     background-color: #f7d05f;
+     color: #111;
+     padding: 2px 8px;
+     right: 5px;
+     top: -10px;
+     border-radius: 10px;
+ }
+ /* =========== Page - Video =========== */
+ 
+ .video {
+     margin: 0 auto;
+     max-width: 800px;
+ }
+ 
+ .card_video-container {
+     position: relative;
+     padding-top: 62.5%;
+ }
+ 
+ .card_video-container iframe {
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     top: 0%
+ }
